@@ -1,5 +1,5 @@
 body{
-    margin:0px;
+    margin:0;
     background-color: white;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -89,7 +89,7 @@ nav li:hover{
 }
 .add{
     display: flex;
-    margin-top: 0px;
+    margin-top: 0;
     margin-left: 250px;
     margin-right: 50px;
     border-bottom: 1px solid #dfdddd;
@@ -250,6 +250,9 @@ tr:hover{
 .dropdown-menu a:hover {
     background-color: #f1f1f1;
     cursor: pointer;
+}
+.clickable-row:hover, .clickable-row.active {
+    background-color: #f1f1f1;
 }
 
 

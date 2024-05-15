@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const rows = document.querySelectorAll('.clickable-row');
     const dropdownMenu = document.getElementById('dropdown-menu');
+    let activeRow = null;
 
     rows.forEach(row => {
         row.addEventListener('click', (event) => {
@@ -9,14 +10,25 @@ document.addEventListener('DOMContentLoaded', () => {
             dropdownMenu.style.top = `${event.pageY}px`;
 
             // Toggle the display of the dropdown menu
-            if (dropdownMenu.style.display === 'block') {
+            if (dropdownMenu.style.display === 'block' && activeRow === row) {
                 dropdownMenu.style.display = 'none';
+                row.classList.remove('active');
+                activeRow = null;
             } else {
                 // Hide any other open dropdown menus
                 document.querySelectorAll('.dropdown-menu').forEach(menu => {
                     menu.style.display = 'none';
                 });
                 dropdownMenu.style.display = 'block';
+
+                // Remove active class from any previously active row
+                if (activeRow) {
+                    activeRow.classList.remove('active');
+                }
+
+                // Set the clicked row as active
+                row.classList.add('active');
+                activeRow = row;
             }
             event.stopPropagation();
         });

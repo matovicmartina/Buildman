@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Building Management/Velise Mugose 23</title>
+    <link rel="stylesheet" href="veliseMugose23.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="buildingsmanagement.html"><img src="buildman.png"></a>
+    </div>
+    <div class="search">
+        <label for="search">
+            <img src="search.png" alt="search icon">
+            <input type="search" id="search" name="search" placeholder="Search">
+        </label>
+    </div>
+    <div class="account">
+        <a href="#"><img src="user.png"></a>
+    </div>
+</header>
+<br>
+<div class="nav">
+    <nav>
+        <br>
+        <div><img src="home.png"><li>Dashboard</li></div><br>
+        <div><a href="buildingsmanagement.html"><img src="building.png"><li>Building <br>Management</li></a></div><br>
+        <div><img src="layout.png"><li>Corporate <br>Management</li></div><br>
+        <div><img src="payment.png"><li>Payments</li></div>
+    </nav>
+</div>
+<div class="add">
+    <h3><a href="buildingsmanagement.html"> Building Management</a> <span>&nbsp;&#10217&nbsp;</span> Veliše Mugoše 23</h3>
+    <span><a href="add.html">&nbsp;Add New &nbsp;&nbsp;<b>+</b></a></span>
+</div>
+<div class="searchid">
+    <label for="searchid">
+        <img src="search.png" alt="search icon">
+        <input type="search" id="searchid" name="searchid" placeholder="Search address or id">
+    </label>
+    <form class="checkbox">
+        <input type="checkbox" id="negative" name="negative" value="negativeBalance">
+        <label for="negative"> Show only negative balance</label>
+    </form>
+    <button>Send invoices</button>
+</div>
+<div class="flatOwners">
+    <table>
+        <tr>
+            <th>Flat id</th>
+            <th>Flat Owner</th>
+            <th>Contact</th>
+            <th>Size</th>
+            <th>Floor</th>
+            <th>Maintenance</th>
+            <th>Email address</th>
+            <th>Balance</th>
+        </tr>
+        <tr class="clickable-row">
+            <td>1</td>
+            <td>Marko Janjić</td>
+            <td>+38268263823</td>
+            <td>50 m&sup2;</td>
+            <td class="floor">1</td>
+            <td class="maintenance">8.00&euro;</td>
+            <td><a href="mailto:marko.janjic@gmail.com">marko.janjic@gmail.com</a></td>
+            <td class="balance"><span class="green">0.00&euro;</span></td>
+        </tr>
+        <tr class="clickable-row">
+            <td>2</td>
+            <td>Vesko Popović</td>
+            <td>+38268263823</td>
+            <td>70 m&sup2;</td>
+            <td class="floor">1</td>
+            <td class="maintenance">15.00&euro;</td>
+            <td><a href="mailto:vesko.popovic@gmail.com">vesko.popovic@gmail.com</a></td>
+            <td class="balance"><span class="green">0.00&euro;</span></td>
+        </tr>
+        <tr class="clickable-row">
+            <td>3</td>
+            <td>Miloš Otašević</td>
+            <td>+38268263823</td>
+            <td>50 m&sup2;</td>
+            <td class="floor">1</td>
+            <td class="maintenance">8.00&euro;</td>
+            <td><a href="mailto:milos.otasevic@gmail.com">milos.otasevic@gmail.com</a></td>
+            <td class="balance"><span class="red">382.00&euro;</span></td>
+        </tr>
+        <tr class="clickable-row">
+            <td>4</td>
+            <td>Milica Đuričković</td>
+            <td>+38268263823</td>
+            <td>90 m&sup2;</td>
+            <td class="floor">2</td>
+            <td class="maintenance">18.00&euro;</td>
+            <td><a href="mailto:milica.djurickovic@gmail.com">milica.djurickovic@gmail.com</a></td>
+            <td class="balance"><span class="green">0.00&euro;</span></td>
+        </tr>
+        <tr class="clickable-row">
+            <td>5</td>
+            <td>Ana Stanišić</td>
+            <td>+38268263823</td>
+            <td>60 m&sup2;</td>
+            <td class="floor">2</td>
+            <td class="maintenance">10.00&euro;</td>
+            <td><a href="mailto:ana.stanisic@gmail.com">marko.janjic@gmail.com</a></td>
+            <td class="balance"><span class="red">382.00&euro;</span></td>
+        </tr>
+        <tr class="clickable-row">
+            <td>6</td>
+            <td>Ivan Bosiljčić</td>
+            <td>+38268263823</td>
+            <td>120 m&sup2;</td>
+            <td class="floor">2</td>
+            <td class="maintenance">22.00&euro;</td>
+            <td><a href="mailto:ivan.bosiljcic@gmail.com">ivan.bosiljcic@gmail.com</a></td>
+            <td class="balance"><span class="red">382.00&euro;</span></td>
+        </tr>
+        <tr class="clickable-row">
+            <td>7</td>
+            <td>Magdalena Kuzmanović</td>
+            <td>+38268263823</td>
+            <td>70 m&sup2;</td>
+            <td class="floor">3</td>
+            <td class="maintenance">15.00&euro;</td>
+            <td><a href="mailto:m.kuzmanovic@gmail.com">m.kuzmanovic@gmail.com</a></td>
+            <td class="balance"><span class="red">382.00&euro;</span></td>
+        </tr>
+        <tr class="clickable-row">
+            <td>8</td>
+            <td>Momčilo Popović</td>
+            <td>+38268263823</td>
+            <td>60 m&sup2;</td>
+            <td class="floor">3</td>
+            <td class="maintenance">10.00&euro;</td>
+            <td><a href="mailto:popovicm@gmail.com">popovicm@gmail.com</a></td>
+            <td class="balance"><span class="red">382.00&euro;</span></td>
+        </tr>
+        <tr class="clickable-row">
+            <td>9</td>
+            <td>Aleksandar Bajčeta</td>
+            <td>+38268263823</td>
+            <td>120 m&sup2;</td>
+            <td class="floor">3</td>
+            <td class="maintenance">22.00&euro;</td>
+            <td><a href="mailto:bajceta@gmail.com">bajceta@gmail.com</a></td>
+            <td class="balance"><span class="red">382.00&euro;</span></td>
+        </tr>
+        <tr class="clickable-row">
+            <td>10</td>
+            <td>Mario Tripović</td>
+            <td>+38268263823</td>
+            <td>90 m&sup2;</td>
+            <td class="floor">3</td>
+            <td class="maintenance">18.00&euro;</td>
+            <td><a href="mailto:tripovicmario@gmail.com">tripovicmario@gmail.com</a></td>
+            <td class="balance"><span class="green">0.00&euro;</span></td>
+        </tr>
+    </table>
+    <div id="dropdown-menu" class="dropdown-menu">
+        <a href="#">Edit</a>
+        <a href="#">Delete</a>
+    </div>
+    <script src="myFunction.js"></script>
+</div>
+</body>
+</html>
